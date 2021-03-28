@@ -1,0 +1,8 @@
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa Request: {content: "test2", date: "2021-03-30T18:58:49.802Z"}
+
+note over browser:
+browser prevents default handling of form submit
+onsubmit instead takes the new note and pushes it to the notes list
+end note
+
+server-->browser: 201 Created. Response: {"message":"note created"}
